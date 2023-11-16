@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Movies</h1>
+    <ul>
+    {% for item in items %}
+        <li>{{ item.name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
